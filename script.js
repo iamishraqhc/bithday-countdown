@@ -7,7 +7,7 @@ const year = document.getElementById("year");
 const loading = document.getElementById("loading");
 
 const currentYear = new Date().getFullYear();
-const test = 10;
+
 const birthdayTime = new Date(`December 30 ${currentYear} 00:00:00`);
 
 const today = new Date();
