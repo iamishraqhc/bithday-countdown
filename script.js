@@ -7,7 +7,7 @@ const year = document.getElementById("year");
 const loading = document.getElementById("loading");
 
 const currentYear = new Date().getFullYear();
-
+const test = 10;
 const birthdayTime = new Date(`December 30 ${currentYear} 00:00:00`);
 
 const today = new Date();
@@ -24,8 +24,11 @@ const age =
 // Update countdown time
 function updateCountdown() {
   const currentTime = new Date();
-  const newYearBirthday = new Date(`December 30 ${currentYear + 1} 00:00:00`)
-  const diff = (birthdayTime < currentTime) ? newYearBirthday - currentTime : birthdayTime - currentTime;
+  const newYearBirthday = new Date(`December 30 ${currentYear + 1} 00:00:00`);
+  const diff =
+    birthdayTime < currentTime
+      ? newYearBirthday - currentTime
+      : birthdayTime - currentTime;
 
   const d = Math.floor(diff / 1000 / 60 / 60 / 24);
   const h = Math.floor(diff / 1000 / 60 / 60) % 24;
